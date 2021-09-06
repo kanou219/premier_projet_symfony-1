@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ExerciceController!{% endblock %}
+
+{% block body %}
+<h1>{{ ville }}</h1>
+
+<hr/>
+
+<h2>Nombres d'habitants : {{ habitant }}</h2>
+
+<hr/>
+
+<h2>
+
+    Type :
+
+    {% if habitant < 1000 %}
+
+     Village
+
+     {% elseif (habitant >= 1000 and habitant < 10000) %}
+     
+     Petite Ville
+
+     {% elseif habitant >= 10000 %}
+
+     Grande ville
+     
+    {% endif %}
+
+</h2>
+
+{% endblock %}
