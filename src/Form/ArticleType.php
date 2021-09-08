@@ -24,9 +24,6 @@ class ArticleType extends AbstractType
             ->add('contenu',TextareaType::class,[
                 'label' => 'Contenu de l\'article'
             ])
-            ->add('createdAt',DateType::class,[
-                'label' => 'Date de publication'
-            ])
         ;
     }
 
